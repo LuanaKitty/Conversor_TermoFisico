@@ -25,6 +25,7 @@ pub fn conversion() {
         6 => input *= 0.0254,
         _ => {
             println!("Invalid input!");
+            return;
         }
     }
     match unit2 {
@@ -36,6 +37,7 @@ pub fn conversion() {
         6 => input *= 39.3700787402,
         _ => {
             println!("Invalid input!");
+            return;
         }
     }
     let mut unit0 = "m";
@@ -48,7 +50,8 @@ pub fn conversion() {
         5 => unit0 = "mi",
         6 => unit0 = "in",
         _ => {
-            println!("Invalid Input!")
+            println!("Invalid Input!");
+            return;
         }
     }
     println!("the conversion is {input}{unit0}");
