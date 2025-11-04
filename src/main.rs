@@ -1,4 +1,5 @@
 mod length;
+mod speed;
 use std::io;
 
 fn main() {
@@ -9,8 +10,8 @@ fn main() {
     let input: u8 = input.trim().parse().unwrap_or(0);
     match input {
         0 => Some(println!("Invalid input!")),
-        1 => todo!(), // todo
-        2 => todo!(), // todo
+        1 => todo!(),                   // todo
+        2 => Some(speed::conversion()), // todo
         3 => Some(length::conversion()),
         4 => todo!(), // todo
         5 => todo!(), // todo
